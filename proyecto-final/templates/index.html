@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>StudyMood</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 StudyMood</h1>
+
+        <p>
+            Hola {{ usuario }}
+        </p>
+
+        <p>
+            Organiza tus estudios y guarda tus apuntes.
+        </p>
+
+        <a href="/materias">
+            <button>
+                Comenzar a estudiar
+            </button>
+        </a>
+
+        <a href="/logout">
+            Cerrar sesión
+        </a>
+
+    </div>
+
+</body>
+</html>
