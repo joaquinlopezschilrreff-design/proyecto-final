@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Crear cuenta</h1>
+
+        <p>Únete a StudyMood</p>
+
+        <form method="POST">
+
+        <input
+            name="username"
+            type="text"
+            placeholder="Nombre de usuario"
+            required
+        >
+
+        <input
+            name="r_correo"
+            type="email"
+            placeholder="Correo electrónico"
+            required
+        >
+
+        <input
+            name="r_password"
+            type="password"
+            placeholder="Contraseña"
+            required
+        >
+
+        <input
+            name="r_confirmacion"
+            type="password"
+            placeholder="Repetir contraseña"
+            required
+        >
+
+            <button>Registrarme</button>
+
+        </form>
+
+        <a href="/">
+            Ya tengo cuenta
+        </a>
+
+    </div>
+</body>
+</html>

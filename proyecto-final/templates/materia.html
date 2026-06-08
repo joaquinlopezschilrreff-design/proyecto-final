@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ materia }}</title>
+</head>
+
+<body>
+
+    <div class="materia-container">
+
+        <h1>{{ materia }}</h1>
+
+        <p>
+            Usuario: {{ usuario }}
+        </p>
+
+        <form method="POST">
+
+            <textarea
+                name="contenido"
+                placeholder="Escribe tu resumen aquí..."
+            >{{ contenido }}</textarea>
+
+            <button>
+                Guardar resumen
+            </button>
+            
+            <button type="button" onclick="leerResumen()">
+            🔊 Escuchar resumen
+            </button>
+
+            <button type="button" onclick="speechSynthesis.cancel()">
+            ⏹ Detener lectura
+            </button>
+            <a href="/descargar/{{ materia }}">
+            <button type="button">
+            ⬇ Descargar resumen
+            </button>
+            </a>
+        </form>
+
+        <a href="/materias">
+            Volver a materias
+        </a>
+
+    </div>
+
+    <script>
+
+function leerResumen(){
+
+    let texto = document.querySelector("textarea").value;
+
+    let voz = new SpeechSynthesisUtterance(texto);
+
+    voz.lang = "es-AR";
+
+    speechSynthesis.speak(voz);
+}
+
+</script>
+</body>
+</html>

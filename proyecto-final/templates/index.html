@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>StudyMood</title>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>📚 StudyMood</h1>
+
+        <p>
+            Hola {{ usuario }} 👋
+        </p>
+
+        <p>
+            Bienvenido de nuevo a tu espacio de estudio.
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>8</h3>
+                <p>Materias</p>
+            </div>
+
+            <div class="card">
+                <h3>🔊</h3>
+                <p>Lectura por voz</p>
+            </div>
+
+            <div class="card">
+                <h3>💾</h3>
+                <p>Guardado automático</p>
+            </div>
+
+        </div>
+
+        <div class="actividad">
+
+            <h2>¿Qué puedes hacer?</h2>
+
+            <p>
+                ✔ Crear resúmenes
+            </p>
+
+            <p>
+                ✔ Guardarlos por materia
+            </p>
+
+            <p>
+                ✔ Escucharlos con síntesis de voz
+            </p>
+
+            <p>
+                ✔ Organizarlos fácilmente
+            </p>
+
+        </div>
+
+        <a href="/materias">
+            <button class="grande">
+                🚀 Comenzar a estudiar
+            </button>
+        </a>
+
+        <a href="/logout">
+            Cerrar sesión
+        </a>
+
+    </div>
+
+</body>
+</html>
