@@ -104,21 +104,6 @@ proyecto-final/
 
 ---
 
-## 🎥 Demostración
-
-Para la entrega se pueden incluir:
-
-* Capturas de pantalla de las diferentes páginas.
-* Un video mostrando:
-
-  * Registro.
-  * Inicio de sesión.
-  * Creación de resúmenes.
-  * Síntesis de voz.
-  * Descarga de archivos.
-
----
-
 ## 🚀 Instalación
 
 ### 1. Clonar el repositorio
